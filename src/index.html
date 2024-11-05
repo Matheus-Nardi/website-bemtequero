@@ -7,41 +7,26 @@
     <link href="./output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/logo_projeto.png" type="image/x-icon">
     <title>Home</title>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo_projeto.png" alt="Logo" width="50" height="50"
-                        class="d-inline-block align-text-top">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#sobre">Sobre nós</a>
-                        <a class="nav-link" href="#fazemos">O que nós fazemos</a>
-                        <a class="nav-link" href="#time">Nosso time</a>
-                        <a class="nav-link" href="#">Contato</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flex gap-4 content-end px-4">
-                <button type="button" class="btn btn-warning btn-sm px-4">Doar</button>
-                <button type="button" class="btn btn-warning btn-sm px-4">Voluntariar</button>
-            </div>
-        </nav>
-
-
+        <div class="flex justify-start items-center m-2">
+            <nav>
+                <ul class="flex space-x-4 items-center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#time">Nosso time</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#eventos">Eventos</a></li>
+                    <li><a href="doacao.html" target="_self">Doar</a></li>
+                    <li><a href="#eventos">Voluntariar</a></li>
+                </ul>
+            </nav>
+        </div>
 
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -82,7 +67,9 @@
                     tristique
                     posuere.</p>
                 <br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla voluptatibus voluptas ex ut, vero, maiores nisi nam et consequuntur fugiat eligendi explicabo maxime amet fuga ab itaque. Minus, neque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nulla voluptatibus voluptas ex ut,
+                    vero, maiores nisi nam et consequuntur fugiat eligendi explicabo maxime amet fuga ab itaque. Minus,
+                    neque.</p>
                 <button type="button" class="btn btn-warning">Doar</button>
 
             </div>
@@ -234,10 +221,10 @@
         </section>
 
         <section class="container">
-            <h2 class="pb-4">Eventos</h2>
+            <h2 id="eventos">Eventos</h2>
 
             <div class="flex gap-4">
-                <div class="card text-bg-warning mb-3 bg-mostarda" style="width: 26rem;">
+                <div class="card text-bg-warning mb-3 bg-mostarda" style="width: 18rem;">
                     <div class="card-header">13 Março</div>
                     <div class="card-body">
                         <h5 class="card-title">Ação dia da Mulher</h5>
@@ -251,7 +238,7 @@
                     </div>
                 </div>
                 <div class="flex gap-4">
-                    <div class="card text-bg-warning mb-3" style="width: 26rem;">
+                    <div class="card text-bg-warning mb-3" style="width: 18rem;">
                         <div class="card-header">19 ABRIL</div>
                         <div class="card-body">
                             <h5 class="card-title">Ação páscoa</h5>
@@ -265,7 +252,7 @@
                         </div>
                     </div>
                     <div class="flex gap-4">
-                        <div class="card text-bg-warning mb-3" style="width: 26rem;">
+                        <div class="card text-bg-warning mb-3" style="width: 18rem;">
                             <div class="card-header">25 DEZEMBRO</div>
                             <div class="card-body">
                                 <h5 class="card-title">Ação natalina</h5>
@@ -284,7 +271,7 @@
         </section>
     </main>
     <footer class="p-4 mt-4 bg-black text-white">
-        <div class="grid grid-cols-3 gap-16 justify-items-center">
+        <div class="grid grid-cols-3 justify-items-center">
             <img src="img/logo_preta.png" alt="Logo" width="200">
 
             <div>
