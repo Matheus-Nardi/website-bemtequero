@@ -9,6 +9,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="shortcut icon" href="img/logo/logo_projeto2.png" type="image/x-icon">
+    <script type="text/javascript" src="scripts-nav.js" defer></script>
     <title>Home</title>
 </head>
 
@@ -16,27 +17,84 @@
     <header>
         <div class="flex flex-row justify-between px-2">
             <div class="flex justify-center items-center p-2">
-                <img src="img/logo/logo_projeto2.png" class="w-16 h-12 rounded-full">
+                <img src="img/logo/logo_projeto2.png" class="rounded-full" style="width: 64px; height: 48px; max-width: 100vh;">
             </div>
+            <nav class="navbar-custom">
+                <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                  <div class="relative flex h-16 items-center justify-between">
+                    <div class="inset-y-0 left-0 flex items-center sm:hidden">
+                      <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+                        <span class="absolute -inset-0.5"></span>
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+                      </button>
+                    </div>
+                    
+                    <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                      <div class="hidden sm:ml-6 sm:mr-6 sm:block">
+                        <div class="flex">
+                          <a href="#" class="rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900" aria-current="page">Home</a>                        
 
-            <div class="flex flex-row p-2 items-center gap-4">
-                <a href="#" class="text-black no-underline" style="text-decoration: none;">Home</a>
-                <a href="#sobre" class="text-black no-underline" style="text-decoration: none;">Sobre nós</a>
-                <a href="#time" class="text-black no-underline" style="text-decoration: none;">Nosso time</a>
-                <a href="contato.html" class="text-black no-underline" style="text-decoration: none;">Contato</a>
-                <a href="#eventos" class="text-black no-underline" style="text-decoration: none;">Eventos</a>
-            </div>
+                          <div class="relative inline-block text-left">
+                            <button type="button" onclick="toggleDropdown()" class="inline-flex justify-center w-full rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+                              Nossa Empresa
+                              <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 -15 40 40" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7l7 7 7-7"></path>
+                              </svg>
+                            </button>
+                          
 
+                            <div id="dropdownMenu" class="absolute right-0 hidden bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 w-full rounded-md">
+                              <div class="py-1">
+                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sobre nós</a>
+                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Nosso Time</a>
+                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contato</a>
+                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Eventos</a>
+                              </div>
+                            </div>
+                          </div>                     
+                          
+                          <a href="./doacao.html" class="rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Doar</a>
+                          <a href="#" class="rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Voluntariar</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
+                <div class="sm:hidden absolute top-16 right-0 w-auto bg-white hidden z-50" id="mobile-menu">
+                    <div class="space-y-1 px-2 pb-3 pt-2">
+                      <a href="#" class="block rounded-md px-3 py-2 text-base font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900" aria-current="page">Home</a>
+                      
+                      
+                      <div class="relative inline-block text-left">
+                        <button type="button" onclick="toggleMobileDropdown()" class="inline-flex justify-between w-full rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
+                          Nossa Empresa
+                          <svg xmlns="http://www.w3.org/2000/svg" class="ml-2 -mr-1 h-5 w-5" fill="none" stroke="currentColor" viewBox="0 -15 40 40" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 7l7 7 7-7"></path>
+                          </svg>
+                        </button>
+              
+                        <div id="mobile-dropdownMenu" class="right-0 hidden bg-white ring-1w-full">
+                          <div class="py-1">
+                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sobre nós</a>
+                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Nosso Time</a>
+                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contato</a>
+                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Eventos</a>
+                          </div>
+                        </div>
 
-            <div class="flex items-center gap-2">
-                <a href="doacao.html" class="no-underline">
-                    <button class="btn btn-outline-dark doar py-0">Doar</button>
-                </a>
-                
-                <button class="btn btn-outline-dark py-0">Voluntariar</button>
-
-            </div>
+                        <a href="./doacao.html" class="block rounded-md px-3 py-2 text-base font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Doar</a>
+                        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Voluntariar</a>
+                      </div>
+                    </div>
+                  </div>
+            </nav>
         </div>
 
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -84,7 +142,7 @@
 
         </section>
 
-        <section class="bg-mostarda flex flex-row p-4 justify-around text-gray-400">
+        <section class="bg-mostarda flex flex-row p-4 justify-around text-gray-400" style="background-color: #FFCC2A;">
             <div class="w-1/3">
                 <p id="fazemos">O que nós fazemos</p>
                 <h2>Nossos principais serviços</h2>
@@ -200,7 +258,7 @@
             </div>
         </section>
 
-        <section class="container text-center p-4 mb-4 bg-mostarda flex-col justify-center rounded-lg">
+        <section class="container text-center p-4 mb-4 bg-mostarda flex-col justify-center rounded-lg" style="background-color: #FFCC2A;">
             <h3>Voce também pode contribuir para um mundo melhor !</h3>
             <button type="button" class="btn btn-light">Me voluntariar</button>
         </section>
