@@ -50,7 +50,7 @@ Antes de começar, certifique-se de que tem as seguintes ferramentas instaladas:
 5. **Compile os estilos do Tailwind CSS** (se necessário):
 
    ```bash
-   npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+   npx tailwindcss -i ./src/input.css -o ./src/output.css --watch
    ```
 
 ## Faça a contribuição
