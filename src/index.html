@@ -38,7 +38,7 @@
                     <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                       <div class="hidden sm:ml-6 sm:mr-6 sm:block">
                         <div class="flex">
-                          <a href="#" class="rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900" aria-current="page">Home</a>                        
+                          <a href="index.html" class="rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900" aria-current="page">Home</a>                        
 
                           <div class="relative inline-block text-left">
                             <button type="button" onclick="toggleDropdown()" class="inline-flex justify-center w-full rounded-md px-3 py-2 font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-100">
@@ -51,10 +51,10 @@
 
                             <div id="dropdownMenu" class="absolute right-0 hidden bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-50 w-full rounded-md">
                               <div class="py-1">
-                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sobre nós</a>
-                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Nosso Time</a>
-                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contato</a>
-                                <a href="#" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Eventos</a>
+                                <a href="#sobre" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sobre nós</a>
+                                <a href="#time" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Nosso Time</a>
+                                <a href="contato.html" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contato</a>
+                                <a href="#eventos" class="block rounded-md px-3 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Eventos</a>
                               </div>
                             </div>
                           </div>                     
@@ -82,10 +82,10 @@
               
                         <div id="mobile-dropdownMenu" class="right-0 hidden bg-white ring-1w-full">
                           <div class="py-1">
-                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sobre nós</a>
-                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Nosso Time</a>
-                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contato</a>
-                            <a href="#" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Eventos</a>
+                            <a href="#sobre" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Sobre nós</a>
+                            <a href="#time" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Nosso Time</a>
+                            <a href="#contato" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contato</a>
+                            <a href="#eventos" class="block rounded-md px-4 py-2 font-medium no-underline text-slate-700 hover:bg-slate-100 hover:text-slate-900">Eventos</a>
                           </div>
                         </div>
 
@@ -96,6 +96,7 @@
                   </div>
             </nav>
         </div>
+        
 
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -142,7 +143,7 @@
 
         </section>
 
-        <section class="bg-mostarda flex flex-row p-4 justify-around text-gray-400" style="background-color: #FFCC2A;">
+        <section class="flex flex-row p-4 justify-around text-black" style="background-color: #FFCC2A;">
             <div class="w-1/3">
                 <p id="fazemos">O que nós fazemos</p>
                 <h2>Nossos principais serviços</h2>
@@ -193,7 +194,6 @@
                         <div>
                             <img src="img/voluntario.png" alt="">
                         </div>
-                        <button class="card-button">More info</button>
                     </div>
                     <div class="text-center flex flex-col items-center">
                         <h5>Nome do voluntario</h5>
@@ -268,42 +268,26 @@
 
             <div class="flex gap-4">
 
+                <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header">12 OUT</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Ação dia das crianças</h5>
+                        <p class="card-text">Nesse evento, realizamos inúmeras dinâmicas com nossas crianças.</p>
+                            <a href="criancas.html" target="_self" class="btn btn-outline-dark">Ler mais</a>
+
+                    </div>
+                </div>
 
                 <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
                     <div class="card-header">13 MAR</div>
                     <div class="card-body">
                         <h5 class="card-title">Ação dia da mulher</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <button class="btn btn-outline-dark">Ler mais</button>
+                        <p class="card-text">Fomos capazes de arrecadar produtos de higiene básica para as mulheres.</p>
+                        <a href="mulher.html" target="_self" class="btn btn-outline-dark">Ler mais</a>
                     </div>
                 </div>
 
-                <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
-                    <div class="card-header">21 DEZ</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Ação dia das crianças</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <button class="btn btn-outline-dark">Ler mais</button>
-                    </div>
-                </div>
-
-                <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
-                    <div class="card-header">22 DEZ</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Ação natalina</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <button class="btn btn-outline-dark">Ler mais</button>
-                    </div>
-                </div>
-            </div>
-
-
+               
         </section>
 
 
