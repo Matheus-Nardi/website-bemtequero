@@ -12,6 +12,27 @@
     <script type="text/javascript" src="scripts-nav.js" defer></script>
     <title>Home</title>
 </head>
+<style>
+    .custom-section-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    @media (min-width: 640px) {
+        .custom-section-container {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (min-width: 768px) {
+        .custom-section-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
 
 <body>
     <header>
@@ -175,7 +196,7 @@
             <img src="img/eventos/IMG_1013.jpg" class="rounded-md w-full sm:w-1/3 sm:h-1/3" alt="">
         </section>
 
-        <section class="container grid grid-cols-3  gap-4 p-4 text-center">
+        <section class="custom-section-container container mx-auto text-center">
             <div class="flex flex-col items-center">
                 <img src="img/icons/hands.png" class="mb-2" alt="Ícone de mãos solidárias">
                 <h3 class="text-lg font-bold mb-2">Missão</h3>
@@ -201,7 +222,6 @@
                     <p>Transparência</p>
                 </div>
             </div>
-
         </section>
 
 
@@ -252,31 +272,30 @@
             <div class="container grid grid-cols-3 gap-4 p-4">
                 <div class="flex flex-col items-center gap-4">
                     <div>
-                        <img src="img/voluntarios/voluntario1.jpeg" alt="Thaylane Manduca"
-                            class="w-40 h-40 rounded-md object-cover">
+                        <img src="img/voluntarios/voluntario1.jpeg" alt="Thaylane Manduca" class="w-40 h-40 rounded-md object-cover">
                     </div>
                     <div class="text-center">
                         <h5>
-                            <div class="flex gap-2 justify-center items-center">
-                                <a href="https://www.instagram.com/thaylanerachel/" target="_blank"> <img
-                                        src="img/icons/instagram.svg" alt=""></a>
+                            <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                                <a href="https://www.instagram.com/thaylanerachel/" target="_blank" class="text-black no-underline">
+                                    <img src="img/icons/instagram.svg" alt="">
+                                </a>
                                 <span>Thaylane Manduca</span>
                             </div>
                         </h5>
                     </div>
                 </div>
-
-                <div class="flex flex-col items-center gap-4 ">
+                
+                
+                
+                <div class="flex flex-col items-center gap-4">
                     <div>
-                        <img src="img/voluntarios/voluntario01 (3).jpeg" alt="Rafaela Batista"
-                            class="w-40 h-40 rounded-md object-cover">
+                        <img src="img/voluntarios/voluntario01 (3).jpeg" alt="Rafaela Batista" class="w-40 h-40 rounded-md object-cover">
                     </div>
                     <div class="text-center">
                         <h5>
-                            <div class="flex gap-2 justify-center items-center">
-
-                                <a href="https://www.instagram.com/rafabatista.al/" target="_blank"
-                                    class="text-black no-underline">
+                            <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                                <a href="https://www.instagram.com/rafabatista.al/" target="_blank" class="text-black no-underline">
                                     <img src="img/icons/instagram.svg" alt="">
                                 </a>
                                 <span>Rafaela Batista</span>
@@ -284,37 +303,31 @@
                         </h5>
                     </div>
                 </div>
-
+                
                 <div class="flex flex-col items-center gap-4 bg-fuchsia-400">
                     <div>
-                        <img src="img/voluntarios/voluntario01 (5).jpeg" alt="Andênia Cardoso"
-                            class="w-40 h-40 rounded-md object-cover">
+                        <img src="img/voluntarios/voluntario01 (5).jpeg" alt="Andênia Cardoso" class="w-40 h-40 rounded-md object-cover">
                     </div>
                     <div class="text-center">
                         <h5>
-                            <div class="flex gap-2 justify-center items-center">
-                                <a href="https://instagram.com/andeniacardoso" target="_blank"
-                                    class="text-black no-underline">
+                            <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                                <a href="https://instagram.com/andeniacardoso" target="_blank" class="text-black no-underline">
                                     <img src="img/icons/instagram.svg" alt="">
                                 </a>
                                 <span>Andrêina Cardoso</span>
-
                             </div>
                         </h5>
                     </div>
                 </div>
-
+                
                 <div class="flex flex-col items-center gap-4">
                     <div>
-                        <img src="img/voluntarios/voluntario01 (6).jpeg" alt="Douglas Lennon"
-                            class="w-40 h-40 rounded-md object-cover">
+                        <img src="img/voluntarios/voluntario01 (6).jpeg" alt="Douglas Lennon" class="w-40 h-40 rounded-md object-cover">
                     </div>
                     <div class="text-center">
                         <h5>
-                            <div class="flex gap-2 justify-center items-center">
-
-                                <a href="https://www.instagram.com/douglas.lennon/" target="_blank"
-                                    class="text-black no-underline">
+                            <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                                <a href="https://www.instagram.com/douglas.lennon/" target="_blank" class="text-black no-underline">
                                     <img src="img/icons/instagram.svg" alt="">
                                 </a>
                                 <span>Douglas Lennon</span>
@@ -322,18 +335,15 @@
                         </h5>
                     </div>
                 </div>
-
+                
                 <div class="flex flex-col items-center gap-4">
                     <div>
-                        <img src="img/voluntarios/voluntario02.jpeg" alt="Sabrina Nardi"
-                            class="w-40 h-40 rounded-md object-cover">
+                        <img src="img/voluntarios/voluntario02.jpeg" alt="Sabrina Nardi" class="w-40 h-40 rounded-md object-cover">
                     </div>
                     <div class="text-center">
                         <h5>
-                            <div class="flex gap-2 justify-center items-center">
-
-                                <a href="https://www.instagram.com/sabrina_nardi/" target="_blank"
-                                    class="text-black no-underline">
+                            <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                                <a href="https://www.instagram.com/sabrina_nardi/" target="_blank" class="text-black no-underline">
                                     <img src="img/icons/instagram.svg" alt="">
                                 </a>
                                 <span>Sabrina Nardi</span>
@@ -341,18 +351,15 @@
                         </h5>
                     </div>
                 </div>
-
+                
                 <div class="flex flex-col items-center gap-4">
                     <div>
-                        <img src="img/voluntarios/voluntario01.jpeg" alt="Pedro Henrique"
-                            class="w-40 h-40 rounded-md object-cover">
+                        <img src="img/voluntarios/voluntario01.jpeg" alt="Pedro Henrique" class="w-40 h-40 rounded-md object-cover">
                     </div>
                     <div class="text-center">
                         <h5>
-                            <div class="flex gap-2 justify-center items-center">
-
-                                <a href="https://www.instagram.com/pretinho_luz/" target="_blank"
-                                    class="text-black no-underline">
+                            <div class="flex flex-col sm:flex-row gap-2 justify-center items-center">
+                                <a href="https://www.instagram.com/pretinho_luz/" target="_blank" class="text-black no-underline">
                                     <img src="img/icons/instagram.svg" alt="">
                                 </a>
                                 <span>Pedro Henrique</span>
@@ -360,6 +367,7 @@
                         </h5>
                     </div>
                 </div>
+                
             </div>
         </section>
 
@@ -394,8 +402,8 @@
                     <div class="card-body">
                         <h5 class="card-title">Ação dia da mulher</h5>
                         <p class="card-text">Fomos capazes de arrecadar produtos de higiene básica para as mulheres.</p>
-                        <a href="#eventos" target="_self" class="btn btn-outline-dark">
-                            Ler mais
+                        <a href="#eventos" target="_self">
+                            <button type="button" class="btn btn-outline-secondary" disabled>Ler mais</button>
                         </a>
                     </div>
                 </div>
@@ -408,21 +416,40 @@
     </main>
     <footer class="p-4 mt-4 bg-black text-white">
         <div class="grid grid-cols-3 justify-items-center">
-            <img src="img/logo/logo_preta.png" alt="Logo" width="200">
+            <a href="https://www.instagram.com/bemtequero_pn/" target="_blank"><img src="img/logo/logo_preta.png"
+                    alt="Logo" width="200"></a>
 
             <div>
-                <p>Home</p>
-                <p>Sobre nós</p>
-                <p>Nosso time</p>
-                <p>Contato</p>
+                <a href="index.html" class="no-underline text-white">
+                    <p>Home</p>
+                </a>
+                <a href="index.html#sobre" class="no-underline text-white">
+                    <p>Sobre nós</p>
+                </a>
+                <a href="index.html#time" class="no-underline text-white">
+                    <p>Nosso time</p>
+                </a>
+                <a href="contato.html" class="no-underline text-white">
+                    <p>Contato</p>
+                </a>
             </div>
 
             <div>
-                <p>Projetos</p>
-                <p>Doar</p>
-                <p>Voluntariar</p>
-                <p>Suporte</p>
+                <a href="index.html#eventos" class="no-underline text-white">
+                    <p>Projetos</p>
+                </a>
+                <a href="doacao.html" class="no-underline text-white">
+                    <p>Doar</p>
+                </a>
+                <a href="contato.html" class="no-underline text-white">
+                    <p>Voluntariar</p>
+                </a>
+                <a href="https://github.com" class="no-underline text-white">
+                    <p>Suporte</p>
+                </a>
             </div>
+
+
         </div>
 
         <div class="flex gap-2 justify-center mt-4">
